@@ -2,6 +2,8 @@
 #include "MainFunctions.h"
 #include <TlHelp32.h>
 
+//Сися-пися
+
 int				TimerDelay = TIMER_DELAY_NORMAL;
 long long		OldKernelTime = 0;
 
