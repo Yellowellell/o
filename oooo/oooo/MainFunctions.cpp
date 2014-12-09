@@ -82,6 +82,8 @@ bool					KillProcess(int ProcessId)
 	HANDLE hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, ProcessId);
 	if (hProcess == NULL)
 		return false;
+		
+	//Попка-кнопка...
 
 	bool Result = (bool)TerminateProcess(hProcess, NULL);
 	CloseHandle(hProcess);
